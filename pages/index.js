@@ -117,6 +117,7 @@ const Home = () => (
        text-align: center;
        border 5px solid #b54c1d;
        text-decoration: none;
+       border-radius: 25%;
      }
 
       .container {
