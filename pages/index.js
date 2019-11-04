@@ -36,6 +36,18 @@ const Home = () => (
         and delight bakers of all stripes.
         </p>
 
+        <div className="bookSales">
+          <h4 className="bsTitle">Order Here</h4>
+          <Link href="https://www.amazon.com/Bread-Table-Shares-Favorite-Recipes/dp/1607749254">
+            <a className='amzSales'>Amazon</a>
+          </Link>
+          <Link href="https://www.goodreads.com/book/show/33911027-bread-on-the-table">
+            <a className='grSales'>Good Reads</a>
+          </Link>
+          <Link href="https://www.barnesandnoble.com/w/bread-on-the-table-david-norman/1130336318#/">
+            <a className='banSales'>B & N</a>
+          </Link>
+        </div>
       </div>
       <div className="box content">
         <h2>David Norman </h2>
@@ -94,6 +106,19 @@ const Home = () => (
        font-family: Smokum-Regular;
        font-size: 250%;
      }
+
+     a {
+       color: #b54c1d;
+       font-size: 125%;
+       background-color: #fff9d0;
+       margin-bottom: 10%;
+       padding: 5%;
+       place-self:  stretch;
+       text-align: center;
+       border 5px solid #b54c1d;
+       text-decoration: none;
+     }
+
       .container {
         height: 100%;
       }
@@ -128,8 +153,6 @@ const Home = () => (
           height: auto;
           max-width: 100%;
       }
-
-
 
       .sidebar {
         grid-area: sidebar;
@@ -170,6 +193,34 @@ const Home = () => (
 
     .bookText {
       padding: 0 5% 5% 5%;
+    }
+
+    .bookSales {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 5%;
+      grid-template-areas:
+      "bsTitle bsTitle bsTitle"
+      "amz gr ban";
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    .bsTitle {
+      grid-area: bsTitle;
+      margin: 0;
+    }
+
+    .amzSales {
+      grid-area: amz;
+    }
+
+    .grSales {
+      grid-area: gr;
+    }
+
+    .banSales {
+      grid-area: ban;
     }
 
     .content {
