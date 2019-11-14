@@ -12,11 +12,11 @@ const Home = () => (
     </Head>
     <div className="wrapper">
       <div className="imgContainer">
-        <img src= "/static/normanWonder.jpg" className="box header"></img>
+        <img src= "/public/static/normanWonder.jpg" className="box header"></img>
         <h1 className="headerText">Texas Dough Puncher</h1>
       </div>
-      <img src= "/static/DavidNorman.jpg" className="box sidebar"></img>
-      <img src="/static/book.jpeg" className="box sidebar2"></img>
+      <img src= "/public/static/DavidNorman.jpg" className="box sidebar"></img>
+      <img src="/public/static/book.jpeg" className="box sidebar2"></img>
       <div className="box bookContainer">
         <h2 className="box bookTitle">Bread on the Table</h2>
         <p className="box bookText">The debut cookbook from cult favorite Austin bakery and beer garden Easy Tiger,
